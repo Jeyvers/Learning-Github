@@ -99,6 +99,7 @@
     <!-- Initialize Swiper -->
     <script>
       function smallScreenSize () {
+        
       var swiper = new Swiper(".mySwiper", {
         navigation: {
           nextEl: ".swiper-button-next",
@@ -128,17 +129,16 @@
       });
     }
 
-    var widths = [0, 500, 850];
+    var widths = [0, 700, 850];
 
 function resizeFn() {
-if (window.innerWidth>=widths[0] && window.innerWidth<widths[1]) {
+if (window.innerWidth >= widths[0] && window.innerWidth <= widths[1]) {
   smallScreenSize();
-} else if (window.innerWidth>=widths[1] && window.innerWidth<widths[2]) {
-  bigScreenSize();
 } else {
-console.log('thanks');
+  bigScreenSize();
 }
 }
+
 window.onresize = resizeFn;
 resizeFn()
 
