@@ -45,6 +45,9 @@
     height: 100%;
     object-fit: cover;
   }
+  #hidden {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -61,6 +64,11 @@
     color: #000;
     margin: 0;
     padding: 0;
+  }
+
+  body {
+    background: #000;
+    color: #000;
   }
 
   .swiper {
@@ -95,10 +103,6 @@
     object-fit: cover;
   }
 
-  body {
-    background: #000;
-    color: #000;
-  }
 
   .swiper {
     width: 100%;
